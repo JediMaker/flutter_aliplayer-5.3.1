@@ -561,7 +561,7 @@ class FlutterAliplayer {
         }
         break;
       case "onCurrentDownloadSpeed":
-        double netSpeed =double.parse(event['netSpeed'].toString()) ;
+        double netSpeed =event['netSpeed'];
         if (onCurrentDownloadSpeed != null) {
           onCurrentDownloadSpeed(netSpeed);
         }
